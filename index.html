@@ -21,19 +21,27 @@
 
 <body>
   <h2>Binary Output</h2>
+  <span>
 	<p class="bg-code" id="binary">
     </p>
+    <button onClick="copy('binary')" placeholder="">Copy</button>
+    <button onClick="clearBruh('field')" placeholder="">Clear</button>
+  </span>
     <h2>
       Text to 5 Bit Binary.
     </h2>
-    <textarea id="field" name="field"></textarea>
+    <textarea class="txtField" id="field" name="field"></textarea>
     <hr />
     <h2>Decoded Output</h2>
+  <span>
 	<p class="bg-code" id="decode">
     </p>
+    <button onClick="copy('decode')" placeholder="">Copy</button>
+    <button onClick="clearBruh('binaryfield')" placeholder="">Clear</button>
+    </span>
     <h2>
       Binary to Ascii (26)
     </h2>
-    <textarea id="binaryfield" name="binaryfield"></textarea>
+    <textarea class="txtField" id="binaryfield" name="binaryfield"></textarea>
   </body>
 </html>

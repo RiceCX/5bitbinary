@@ -88,7 +88,7 @@ function updateValue(e) {
   listOfAscii.forEach(resolve);
     // clear reset
   listOfAscii = [];
-  log.textContent = binaryCodes.join(" ");
+  log.textContent = binaryCodes.join(" ").toLowerCase();
   binaryCodes = [];
 
   // util
@@ -117,4 +117,18 @@ return binString;
 }
 function hasWhiteSpace(s) {
   return /\s/g.test(s);
+}
+function copy(id) {
+        var from = document.getElementById(id);
+        var range = document.createRange();
+        window.getSelection().removeAllRanges();
+        range.selectNode(from);
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+} 
+function clearBruh(id) {
+  console.log('sd');
+  const tag = document.getElementById(id);
+  tag.value = "";
 }
